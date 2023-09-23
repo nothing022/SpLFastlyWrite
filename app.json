@@ -6,8 +6,8 @@
          "FW",
          "SpL",
       ],   
-   "repository": "https://github.com/ShutupKeshav/SpLFastlyWrite",
-   "stack": "heroku-22",
+   "repository": "https://github.com/nothing022/SpLFastlyWrite",
+   "stack": "container",
    "addons": [
       {
          "options": {
@@ -60,6 +60,18 @@
          "description": "Get this value from Telegram.",
          "required": false,
          "value": ""
-      },
-   }
-}
+     }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }
