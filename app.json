@@ -7,14 +7,6 @@
          "SpL",
       ],   
    "repository": "https://github.com/nothing022/SpLFastlyWrite",
-   "stack": "container",
-   "addons": [
-      {
-         "options": {
-            "version": "12"
-         }
-      }
-   ],
    "env": {
       "API_ID": {
          "description": "Get this value from my.telegram.org/apps.",
